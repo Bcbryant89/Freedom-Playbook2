@@ -29,7 +29,16 @@
       font-size: 18px;
       margin: 20px 0;
     }
-    .paypal-button-container {
+    .button {
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: #D32F2F;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       margin-top: 30px;
     }
   </style>
@@ -39,19 +48,9 @@
     <h1>🚀 The Freedom Playbook</h1>
     <p>Purchase your digital copy below and start your journey to financial freedom today.</p>
 
-    <div class="paypal-button-container" id="paypal-container-5P8G3P8LUYQZS"></div>
+    <a class="button" href="https://www.paypal.com/ncp/payment/VHCB2ZVNDKAN6" target="_blank">
+      📘 Buy The Freedom Playbook – $19.99
+    </a>
   </div>
-
-  <!-- PayPal SDK -->
-  <script 
-    src="https://www.paypal.com/sdk/js?client-id=BAAVWjMdpvUea7TyOQWshpyrXxCVzglGsPNpVJN7ZJvdm3SvvzhPC1SqhUDsIu8NgVWOSwV9u2lopWMxmQ&components=hosted-buttons&enable-funding=venmo&currency=USD">
-  </script>
-
-  <!-- Hosted Button Script -->
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "5P8G3P8LUYQZS"
-    }).render("#paypal-container-5P8G3P8LUYQZS");
-  </script>
 </body>
 </html>
